@@ -1,5 +1,5 @@
 var selectedMovie;
-$("#selectMovie").change(function(){
+function changeSelectedMovie(){
 	selectedMovie = $("#selectMovie").children(":selected").attr("id");
 	if(selectedMovie == "uncharted"){
 		console.log($("#moviePic").attr("src"));
@@ -20,7 +20,8 @@ $("#selectMovie").change(function(){
 	else{
 		$("#moviePic").attr("src","img/movieList6.jpg");
 	}
-});
+
+}
 
 function contactFormValidator(){
 	var contactName = $("#contactName").val();
